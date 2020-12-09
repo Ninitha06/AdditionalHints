@@ -1,0 +1,54 @@
+Additional Hints :
+
+Database is going to have
+
+project name
+        - Food
+        - FeedTime
+
+
+
+
+Display function for Food.js is given in project pdf.
+
+No need to have updateFoodStock, getFedTime, getFoodStock in Food.js
+
+In sketch.js, create a new foodObject. And call display function of it.
+
+When you read the foodStock from database, set the foodStock property of foodObject.
+function readStock(data){
+  foodS=data.val();
+  foodObj.foodStock = foodS;
+}
+
+
+When Add Food button is pressed, increase the food by 1 and update DB with the new foodS value.
+(foodS = foodS + 1)
+
+When feedDog button is pressed, dog should have happy dog image.
+Decrease the foodStock in foodObject by 1.
+Update the Food and FeedTime to DB.
+
+//function to update food stock and last fed time
+
+function feedDog(){
+  dog.addImage(happyDog);
+
+  foodObj.foodStock = foodObj.foodStock - 1;
+  database.ref('/').update({
+    Food:foodObj.foodStock,
+    FeedTime:hour()
+  })
+}
+
+To display the feed time
+
+ fill(255,255,254);
+  textSize(15);
+  if(lastFed>=12){
+    text("Last Feed : "+ lastFed%12 + " PM", 350,30);
+   }else if(lastFed==0){
+     text("Last Feed : 12 AM",350,30);
+   }else{
+     text("Last Feed : "+ lastFed + " AM", 350,30);
+   }
