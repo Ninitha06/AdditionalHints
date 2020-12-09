@@ -1,0 +1,12 @@
+To destroy indivdual fruits that touch the basket and update the score.
+
+//groupName.get(index of the for loop) gets the indivdual elements of the fruit group.
+
+//Loop over the entire list of fruits in the fruit group.
+for(var i=0;i<fruitGroup.length;i++){
+                         if(fruitGroup.get(i).isTouching(players)){
+                             fruitGroup.get(i).destroy();
+                             player.score = player.score + 1;
+                             player.update();
+                         }
+}
