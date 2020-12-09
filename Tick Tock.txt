@@ -1,4 +1,4 @@
-Additional hints : (Refer Project document for other hints)
+Additional hints : THESE ARE ADDITIONAL HINTS, PLEASE REFER MAIN PROJECT DOCUMENT FOR OTHER HINTS AND STEPS TO FOLLOW. ALSO REFER THIS ONLY IF YOU ARE UNABLE TO PROCEED WITH PROJECT..IT IS ALWAYS APPRECIABLE IF YOU CAN TRY ON YOUR OWN.
 
 1. To draw the clock at the center and to make the coding easy, translate to 200,200 position of the canvas.
 2. Be aware that the y-axis increases in the downward direction, therefore angles are measured clockwise from the positive x-direction ("3 o'clock").
