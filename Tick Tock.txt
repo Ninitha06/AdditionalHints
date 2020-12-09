@@ -1,0 +1,28 @@
+Additional hints : (Refer Project document for other hints)
+
+1. To draw the clock at the center and to make the coding easy, translate to 200,200 position of the canvas.
+2. Be aware that the y-axis increases in the downward direction, therefore angles are measured clockwise from the positive x-direction ("3 o'clock").
+Thats why, you need to give rotate(-90) to make it work from 12 o'clock.
+
+3. Use map function to map the hours/minutes/seconds to angle for drawing them.
+scAngle = map(sc, 0, 60, 0, 360);
+mnAngle = map(mn,0,60,0,360)
+hrAngle = map(hr % 12,0,12,0,360)
+
+4. Drawing seconds hand
+//drawing seconds hand
+    push();
+    rotate(scAngle); //rotate the hand based on angle calculated
+    stroke(255,0,0);
+    strokeWeight(7);
+    line(0,0,100,0);
+    pop()
+
+similarly draw hours and minutes angle.
+
+5. To draw the arc of seconds (https://p5js.org/reference/#/p5/arc - refer document to understand how it works)
+//Seconds
+    stroke(255,0,0);
+    arc(0,0,300,300,0,scAngle);
+
+Similarly draw arc for hours,minutes as requested in the project document.
