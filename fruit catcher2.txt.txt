@@ -1,7 +1,9 @@
+ADDITIONAL HINTS : THESE ARE ADDITIONAL HINTS, PLEASE REFER MAIN PROJECT DOCUMENT FOR OTHER HINTS AND STEPS TO FOLLOW. ALSO REFER THIS ONLY IF YOU ARE UNABLE TO PROCEED WITH PROJECT..IT IS ALWAYS APPRECIABLE IF YOU CAN TRY ON YOUR OWN.
+
 1. Change gameState to 2 when any of their score reaches 10 in play function.
+2. Add an extra condition gameState === 0 when checking playerCount === 2 in function draw..
 
-
-2. End function to show who wins
+3. End function to show who wins
 
 end(){
        console.log("Game Ended");
