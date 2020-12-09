@@ -1,0 +1,20 @@
+1. Change gameState to 2 when any of their score reaches 10 in play function.
+
+
+2. End function to show who wins
+
+end(){
+       console.log("Game Ended");
+       form.hide();
+       Player.getPlayerInfo();
+       textSize(35);
+       fill("red");
+       if(allPlayers){
+       if(allPlayers.player1.score > allPlayers.player2.score)
+        text(allPlayers.player1.name + " wins", 400,200);
+        else
+            text(allPlayers.player2.name + " wins", 400,200);
+       }
+    }
+
+
