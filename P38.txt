@@ -4,7 +4,7 @@ Take Trex or Monkey game..Both games move in x direction. Hence fix the camera.p
 (eg) camera.position.x = trex.x
 Also if you want your game to move with your trex in y direction, assign y position also.
 
-Adjust your ground reseting, restart, gameOver buttons can be repositioned using camera.position.x values instead of absolute values that you were using.
+Adjust your ground reseting.. restart, gameOver buttons can be repositioned using camera.position.x values instead of absolute/definite values that you were using.
 
 
 
