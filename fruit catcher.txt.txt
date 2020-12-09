@@ -1,3 +1,6 @@
+ADDITIONAL HINTS : 
+THESE ARE ADDITIONAL HINTS, PLEASE REFER MAIN PROJECT DOCUMENT FOR OTHER HINTS AND STEPS TO FOLLOW. ALSO REFER THIS ONLY IF YOU ARE UNABLE TO PROCEED WITH PROJECT..IT IS ALWAYS APPRECIABLE IF YOU CAN TRY ON YOUR OWN.
+
 To destroy indivdual fruits that touch the basket and update the score.
 
 //groupName.get(index of the for loop) gets the indivdual elements of the fruit group.
