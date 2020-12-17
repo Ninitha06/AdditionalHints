@@ -1,0 +1,27 @@
+Additional hints : THESE ARE ADDITIONAL HINTS, 
+PLEASE REFER MAIN PROJECT DOCUMENT FOR OTHER HINTS AND STEPS TO FOLLOW. ALSO REFER THIS ONLY IF YOU ARE UNABLE TO PROCEED WITH PROJECT..IT IS ALWAYS APPRECIABLE IF YOU CAN TRY ON YOUR OWN.
+
+we are using p5.play.js and matter.js in this project as we are not going to use rotate command anywhere.
+
+1. Drop.js - display funtion will use ellipse to display. update function will update the drops back to the canvas once they reach the bottom of the canvas.
+2. umbrella.js - static physics body. load the image in constructor(boy with umbrella) and position it in the display function using image command.
+3. Load the thunder images in preload function of sketch.js.
+4. create umbrella object and drops object(using for loop) in set up function.
+5. Draw function, To create thunder, create a random number between 1 and 4. For every 80 frameCount, use switch case to attach one of the 4 images of thunder.
+(refer how we did in spawnObstacles of trex game)
+6. have a global variable thunderCreatedFrame = 0.
+7. Inside the if block, where you check if the frameCount is a multiple of 80(modulo operator), assign the frameCount to thunderCreatedFrame.
+thunderCreatedFrame = frameCount;
+8. To remove the thunder after 10 frames,
+//thunderCreatedFrame is 80 means, we are removing it when frameCount is 90. so only 
+//thunderCreatedFrame + 10 ===frameCount 
+// && thunder means checking if the sprite is present, only then we are destroying it.
+if(thunderCreatedFrame + 10 ===frameCount && thunder){
+        thunder.destroy();
+    }
+9. Call display of umbrella.
+10. Call display and update function of drops using for loop. 
+for(var i = 0; i<maxDrops; i++){
+        drops[i].display();
+        drops[i].update()
+  }
