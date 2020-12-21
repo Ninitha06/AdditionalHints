@@ -1,0 +1,23 @@
+Additional hints : THESE ARE ADDITIONAL HINTS, 
+PLEASE REFER MAIN PROJECT DOCUMENT FOR OTHER HINTS AND STEPS TO FOLLOW. ALSO REFER THIS ONLY IF YOU ARE UNABLE TO PROCEED WITH PROJECT..IT IS ALWAYS APPRECIABLE IF YOU CAN TRY ON YOUR OWN.
+
+
+1. divide your rope into 5 parts like the balls...each ball should be attached to different points on the roof(you can accomplish that with the help of offset you are passing)..
+2. for the center ball, offset will be 0,0... next ball to the right of center ball will have bob diameter as x value and y as 0... last ball to the right of center ball will have 2 times * bob diameter as x value and y as 0 for offsets..
+left ball to the center ball's offset will have -bob diameter as x offset and 0 as y offset...
+check point 7 under Specific tasks..it talks about the same. bob diameter has the diameter of the circular body that is hanging..
+3. they have used variable name as BobDiameter..u can also directly pass values when creating rope.
+rope1=new Rope(bob1.body,roof.body,0,0);
+rope2=new Rope(bob2.body,roof.body,40,0);  -> 40 is the diameter and this code will be for the bob to the right of center one.
+
+4. in the display function of Rope, u need to draw the line using offset. 
+(the line u draw should connect the bodyA position to the body B position + offsetX and body B position + offsetY.)
+display(){ 
+var pointA = this.body.bodyA.position; 
+var pointB = this.body.bodyB.position; 
+var posX = pointB.x + this.offsetX; 
+var posY = pointB.y + this.offsetY; 
+strokeWeight(2); 
+stroke("white"); 
+line (pointA.x, pointA.y,posX,posY); 
+}

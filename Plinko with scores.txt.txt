@@ -1,0 +1,12 @@
+Debugging project. 
+
+We learnt about different errors and how to debug them.
+So first go through the code and try to understand what they are trying to code.
+
+
+Hints if unable to proceed :
+1. count and turn are same.. use any 1, not both..
+2. it is particle variable...not particles..
+3. use text command to display the scores near the divisions.
+4. use line command to draw the yellow line.. stroke("yellow") will give yellow color.
+5. gameStates should be start and end. if gameState is end, display Game Over.

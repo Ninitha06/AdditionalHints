@@ -1,0 +1,6 @@
+1. All the codes are given in hint. Just assembling is required.(Follow each step given in document carefully)
+2. Create all classes as given.
+3. Create 3 variables as arrays for particles, plinkos, divisions outside setup.
+4. Use for loop as given in document to create plinkos and divisions in set up function.
+5. For every 60 frames, push new particle into particles array using the code given in hints. (draw function).
+6. in draw function, call display function of all arrays using for loop. Code given in document.
