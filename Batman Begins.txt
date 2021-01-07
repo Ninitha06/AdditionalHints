@@ -3,7 +3,7 @@ PLEASE REFER MAIN PROJECT DOCUMENT FOR OTHER HINTS AND STEPS TO FOLLOW. ALSO REF
 
 we are using p5.play.js and matter.js in this project as we are not going to use rotate command anywhere.
 
-1. Drop.js - display funtion will use ellipse to display. update function will update the drops back to the canvas once they reach the bottom of the canvas.
+1. Drop.js - display funtion will use ellipse to display. update function will update the drops back to the canvas once they reach the bottom of the canvas. update function given in Hints 3 in project pdf.
 2. umbrella.js - static physics body. load the image in constructor(boy with umbrella, one image is enough) and position it in the display function using image command.
 3. Load the thunder images in preload function of sketch.js.
 4. create umbrella object and drops object(using for loop) in set up function.
